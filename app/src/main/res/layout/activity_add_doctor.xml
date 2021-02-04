@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".utils.AddDoctor">
+
+    <TextView
+        android:id="@+id/txt_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Add Doctor"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="@color/appcolor"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_top"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:hint="Enter Name"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edittext_roundcorner"
+            android:layout_height="50dp" />
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="Enter Email"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edittext_roundcorner"
+            android:layout_height="50dp" />
+
+        <EditText
+            android:id="@+id/edt_quali"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:paddingLeft="10dp"
+            android:hint="Enter Qualification"
+            android:background="@drawable/edittext_roundcorner"
+            android:layout_height="50dp" />
+
+        <Spinner android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="Enter Email"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/edittext_roundcorner"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#FFFFFF"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundcornertext"
+            android:text="Add"
+            />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

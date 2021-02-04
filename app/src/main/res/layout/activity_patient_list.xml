@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".utils.PatientList">
+
+    <TextView
+        android:id="@+id/txt_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Patient List"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="@color/appcolor"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_top"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Add New Patient"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="@drawable/roundcornertext"
+            />
+
+        <TextView
+            android:id="@+id/txt_nothing"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Nothing Found"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/txt_delete"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Delete All"
+            android:textColor="@color/appcolor"
+            android:textSize="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:layout_gravity="right"
+            android:gravity="right"
+            />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
